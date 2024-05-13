@@ -83,11 +83,14 @@ export default function Home() {
     sort: 'none',
   })
 
+  const apiUrl =
+    process.env.LOCAL_DB_URL || 'http://localhost:3000/api/products'
+
   const { data: products, refetch } = useQuery({
     queryKey: ['products'],
     queryFn: async () => {
       const { data } = await axios.post<QueryResult<TProduct>[]>( // passing generic
-        'http://localhost:3000/api/products',
+        `${apiUrl}`,
         {
           filter: {
             sort: filter.sort,
