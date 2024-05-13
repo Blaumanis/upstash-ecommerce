@@ -82,7 +82,7 @@ export default function Home() {
     sort: 'none',
   })
 
-  const apiUrl = process.env.LOCAL_DB_URL
+  const apiUrl = 'https://master.d3ju3utrsrjnkm.amplifyapp.com/products/api'
 
   const { data: products, refetch } = useQuery({
     queryKey: ['products'],
