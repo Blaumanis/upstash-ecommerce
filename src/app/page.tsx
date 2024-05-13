@@ -131,9 +131,6 @@ export default function Home() {
   const minPrice = Math.min(filter.price.range[0], filter.price.range[1])
   const maxPrice = Math.max(filter.price.range[0], filter.price.range[1])
 
-  console.log(products)
-  console.log(filter)
-
   return (
     <main className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
       <div className='flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24'>
@@ -369,7 +366,11 @@ export default function Home() {
             {products && products.length === 0 ? (
               <EmptyState />
             ) : products ? (
-              products.map((product) => <Product product={product.metadata!} />)
+              products.map((product) => (
+                <div key={product.id}>
+                  <Product product={product.metadata!} />
+                </div>
+              ))
             ) : (
               new Array(12)
                 .fill(null)
