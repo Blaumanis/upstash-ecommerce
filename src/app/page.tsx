@@ -82,7 +82,7 @@ export default function Home() {
     sort: 'none',
   })
 
-  const apiUrl = 'https://master.d3ju3utrsrjnkm.amplifyapp.com/products/api'
+  const apiUrl = 'http://localhost:3000/api/products'
 
   const { data: products, refetch } = useQuery({
     queryKey: ['products'],

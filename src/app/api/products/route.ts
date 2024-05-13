@@ -71,12 +71,8 @@ export const POST = async (req: NextRequest) => {
     const response = new Response(JSON.stringify(products))
 
     // Set CORS headers to allow requests from your deployed Next.js app
-    response.headers.set(
-      'Access-Control-Allow-Origin',
-      'https://master.d3ju3utrsrjnkm.amplifyapp.com/'
-    )
-    response.headers.set('Access-Control-Allow-Methods', 'POST')
-    response.headers.set('Access-Control-Allow-Headers', 'Content-Type')
+    response.headers.set('Access-Control-Allow-Origin', '*')
+    response.headers.set('Access-Control-Allow-Headers', '*')
 
     return response
   } catch (err) {
