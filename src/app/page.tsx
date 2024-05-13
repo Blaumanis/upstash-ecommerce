@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useCallback, useState } from 'react'
 import {
   DropdownMenu,
@@ -83,8 +82,7 @@ export default function Home() {
     sort: 'none',
   })
 
-  const apiUrl =
-    process.env.LOCAL_DB_URL || 'http://localhost:3000/api/products'
+  const apiUrl = process.env.LOCAL_DB_URL
 
   const { data: products, refetch } = useQuery({
     queryKey: ['products'],
