@@ -14,7 +14,7 @@
 - [lodash.debounce](https://www.npmjs.com/package/lodash.debounce) - NPM utility library for executing functions with some time delay
 - [AWS](https://aws.amazon.com/amplify) - using AWS Amplify service for hosting application 
 
-## Thing learned
+## Things learned
 
 - Validating schema with ZOD library
 - How to implement full type safety for frontend and backend
