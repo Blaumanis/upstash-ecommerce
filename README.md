@@ -1,6 +1,6 @@
 ## Links
 
-- Site url (https://master.d3ju3utrsrjnkm.amplifyapp.com/)
+- Site url [https://master.d3ju3utrsrjnkm.amplifyapp.com/]
 
 ## Built with
 
