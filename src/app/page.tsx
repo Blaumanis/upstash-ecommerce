@@ -75,6 +75,12 @@ const PRICE_FILTERS = {
 const DEFAULT_CUSTOM_PRICE = [0, 100] as [number, number]
 
 export default function Home() {
+  const [isFiltersVisible, setIsFiltersVisible] = useState<boolean>(false)
+
+  const toggleFilters = () => {
+    setIsFiltersVisible(!isFiltersVisible)
+  }
+
   const [filter, setFilter] = useState<ProductState>({
     color: ['white', 'beige', 'green', 'purple', 'blue'],
     price: { isCustom: false, range: DEFAULT_CUSTOM_PRICE },
@@ -166,7 +172,10 @@ export default function Home() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <button className='-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden'>
+          <button
+            onClick={toggleFilters}
+            className='-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden'
+          >
             <Filter className='h-5 w-5' />
           </button>
         </div>
@@ -174,7 +183,7 @@ export default function Home() {
       <section className='pb-24 pt-6'>
         <div className='grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4'>
           {/* Filters */}
-          <div className='hidden lg:block'>
+          <div className={`lg:block ${isFiltersVisible ? 'block' : 'hidden'}`}>
             <ul className='space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900'>
               {SUBCATEGORIES.map((category) => (
                 <li key={category.name}>
