@@ -92,13 +92,8 @@ export default function Home() {
     sort: 'none',
   })
 
-  // const apiUrl = 'https://master.d3ju3utrsrjnkm.amplifyapp.com/api/products'
-  const apiUrl = 'http://localhost:3000/api/products'
-
-  const test2 = process.env.UPSTASH_VECTOR_REST_URL
-  const test3 = process.env.UPSTASH_VECTOR_REST_TOKEN
-  console.log(test2)
-  console.log(test3)
+  const apiUrl = 'https://master.d3ju3utrsrjnkm.amplifyapp.com/api/products'
+  // const apiUrl = 'http://localhost:3000/api/products'
 
   const { data: products, refetch } = useQuery({
     queryKey: ['products'],
