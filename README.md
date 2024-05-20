@@ -1,18 +1,18 @@
 ## Links
 
-- Site url (https://master.d3ju3utrsrjnkm.amplifyapp.com/)
+- [Site url](https://master.d3ju3utrsrjnkm.amplifyapp.com/)
 
 ## Built with
 
-- React - JS library (https://react.dev/)
-- NextJS 14 - React framework (https://nextjs.org/)
-- TypeScript - Typed JS superset (https://www.typescriptlang.org/)
-- Zod - TypeScript schema validation (https://zod.dev/)
-- Upstash (using vector DB) - data platform (https://upstash.com/)
-- Axios - NPM library for handling HTTP requests (https://axios-http.com/)
-- Tailwind CSS - CSS framework (https://tailwindcss.com/)
-- lodash.debounce - NPM utility library for executing functions with some time delay (https://www.npmjs.com/package/lodash.debounce)
-- AWS - using AWS Amplify service for hosting application (https://aws.amazon.com/amplify)
+- [React](https://react.dev/) - JS library
+- [NextJS 14](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Typed JS superset
+- [Zod](https://zod.dev/) - TypeScript schema validation
+- [Upstash](https://upstash.com/) (using vector DB) - data platform
+- [Axios](https://axios-http.com/) - NPM library for handling HTTP requests
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [lodash.debounce](https://www.npmjs.com/package/lodash.debounce) - NPM utility library for executing functions with some time delay
+- [AWS](https://aws.amazon.com/amplify) - using AWS Amplify service for hosting application 
 
 ## Thing learned
 
